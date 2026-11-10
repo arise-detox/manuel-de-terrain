@@ -1,0 +1,29 @@
+/* Schémas SVG : uniquement des variables de thème, donc compatibles jour / nuit / lampe rouge. */
+.d-ln{fill:none;stroke:var(--ink);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.d-l2{stroke:var(--ink-2);stroke-width:1.3}
+.d-th{stroke-width:3.6}
+.d-fine{stroke-width:1}
+.d-ac{stroke:var(--grid)}
+.d-dg{stroke:var(--danger)}
+.d-wt{stroke:var(--water)}
+.d-vg{stroke:var(--veg)}
+.d-ct{stroke:var(--contour)}
+.d-dash{stroke-dasharray:7 6}
+.d-dot{stroke-dasharray:2 5}
+.d-nos{stroke:none}
+.f-p{fill:var(--panel)}.f-pp{fill:var(--panel-2)}.f-pa{fill:var(--paper)}
+.f-a{fill:var(--grid-tint)}.f-w{fill:var(--water-tint)}.f-v{fill:var(--veg-tint)}
+.f-d{fill:var(--danger-tint)}.f-wa{fill:var(--warn-tint)}.f-ok{fill:var(--ok-tint)}
+.f-vg{fill:var(--veg)}.f-i{fill:var(--ink)}.f-ac{fill:var(--grid)}.f-dg{fill:var(--danger)}.f-ct{fill:var(--contour)}
+.d-t{font:600 17px var(--f-head);fill:var(--ink)}
+.d-s{font-size:14.5px}
+.d-b{font-weight:700;font-size:20px}
+.d-xl{font-weight:700;font-size:32px}
+.d-g{fill:var(--ink-2)}
+.d-ta{fill:var(--grid)}
+.d-td{fill:var(--danger)}
+.d-m{text-anchor:middle}
+.d-e{text-anchor:end}
+.d-on{fill:var(--on-grid)}
+.d-ahf{fill:var(--ink)}.d-aha{fill:var(--grid)}.d-ahd{fill:var(--danger)}
+.d-sg{font-family:var(--f-body);font-weight:400;font-size:15px}

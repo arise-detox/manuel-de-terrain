@@ -1,0 +1,14 @@
+{
+  "name": "manuel-de-terrain",
+  "version": "1.0.0",
+  "description": "Manuels de terrain en français : navigation, survie, secours, radio, commandement, froid et montagne. Application web statique, hors-ligne.",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test": "node scripts/validate.mjs && node scripts/check-syntax.mjs",
+    "start": "python3 -m http.server 8080"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

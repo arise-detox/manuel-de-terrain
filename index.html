@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr" data-theme="jour">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manuel de terrain</title>
+  <meta name="description" content="Navigation, survie, secours, radio, commandement, froid et montagne : l’essentiel des manuels de terrain publics américains, réécrit en français, avec schémas, quiz et outils hors-ligne.">
+  <meta name="theme-color" content="#E9EDE3">
+  <meta property="og:title" content="Manuel de terrain">
+  <meta property="og:description" content="Manuels de terrain en français : navigation, survie, secours, radio, commandement, froid et montagne. Schémas, quiz, outils hors-ligne.">
+  <meta property="og:type" content="website">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="preload" href="assets/fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/diagrams.css">
+  <script>try{var s=JSON.parse(localStorage.getItem("mdt.v1"));if(s&&s.theme)document.documentElement.setAttribute("data-theme",s.theme)}catch(e){}</script>
+</head>
+<body>
+  <a class="skip" href="#view">Aller au contenu</a>
+  <div class="app">
+    <header class="top">
+      <a class="brand" href="#/" aria-label="Manuel de terrain, accueil">
+        <svg viewBox="0 0 512 512" aria-hidden="true"><rect width="512" height="512" rx="96" fill="var(--ink)"/><g fill="none" stroke="var(--paper)" stroke-width="12"><ellipse cx="256" cy="282" rx="196" ry="150" opacity=".45"/><ellipse cx="262" cy="278" rx="146" ry="108" opacity=".65"/><ellipse cx="268" cy="274" rx="98" ry="70" opacity=".85"/><ellipse cx="272" cy="270" rx="50" ry="34"/></g><path d="M256 64 L296 150 L256 130 L216 150Z" fill="#E8584A"/></svg>
+        <b>Manuel de terrain</b>
+      </a>
+      <button id="menu" aria-expanded="false" aria-controls="side">Menu</button>
+    </header>
+    <aside class="side" id="side">
+      <a class="brand" href="#/" aria-label="Manuel de terrain, accueil">
+        <svg viewBox="0 0 512 512" aria-hidden="true"><rect width="512" height="512" rx="96" fill="var(--ink)"/><g fill="none" stroke="var(--paper)" stroke-width="12"><ellipse cx="256" cy="282" rx="196" ry="150" opacity=".45"/><ellipse cx="262" cy="278" rx="146" ry="108" opacity=".65"/><ellipse cx="268" cy="274" rx="98" ry="70" opacity=".85"/><ellipse cx="272" cy="270" rx="50" ry="34"/></g><path d="M256 64 L296 150 L256 130 L216 150Z" fill="#E8584A"/></svg>
+        <span><b>Manuel de terrain</b><small>doctrine publique, en français</small></span>
+      </a>
+      <form class="searchbox" id="sidesearch" role="search"><label class="sr" for="sideq">Rechercher</label><input id="sideq" type="search" placeholder="Rechercher  ( / )" autocomplete="off"></form>
+      <div id="navhost"></div>
+      <div class="themes" role="group" aria-label="Thème d’affichage">
+        <button data-t="jour" aria-pressed="true" title="Thème clair">Jour</button>
+        <button data-t="nuit" aria-pressed="false" title="Thème sombre">Nuit</button>
+        <button data-t="rouge" aria-pressed="false" title="Lampe rouge : préserve la vision nocturne">Rouge</button>
+      </div>
+    </aside>
+    <main class="main" id="main">
+      <div class="wrap" id="view"><noscript><p>Ce site nécessite JavaScript pour afficher son contenu.</p></noscript></div>
+    </main>
+  </div>
+
+  <script src="js/core.js"></script>
+  <script src="js/diagrams-a.js"></script>
+  <script src="js/diagrams-b.js"></script>
+  <script src="data/sources.js"></script>
+  <script src="data/glossaire.js"></script>
+  <script src="data/mod-navigation.js"></script>
+  <script src="data/mod-survie.js"></script>
+  <script src="data/mod-secours.js"></script>
+  <script src="data/mod-transmissions.js"></script>
+  <script src="data/mod-commandement.js"></script>
+  <script src="data/mod-deplacement.js"></script>
+  <script src="data/mod-doctrine.js"></script>
+  <script src="data/mod-tir.js"></script>
+  <script src="data/mod-forme.js"></script>
+  <script src="data/mod-froid.js"></script>
+  <script src="data/parcours.js"></script>
+  <script src="js/tools.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
