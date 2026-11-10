@@ -37,6 +37,7 @@
         id: "procedure", titre: "Procédure radio et alphabet phonétique", resume: "Parler court, clair et sans ambiguïté, avec les mots de procédure.",
         b: [
           p("La procédure radio réduit les erreurs. Les mots de procédure (**prowords**) ont un sens précis et gagnent du temps. Le plus important : **réfléchir avant d’appuyer**, parler lentement, distinctement, en phrases courtes."),
+          dia("rad-dialogue", "Un échange complet : on s’annonce, on attend la réponse, on transmet, on clôt."),
           h("Structure d’un appel"),
           steps(["Appeler", "Dites d’abord **qui vous appelez**, puis **qui vous êtes** : « Alpha de Bravo, Alpha de Bravo. Répondez. »"], ["Attendre la réponse", "Le correspondant répond : « Ici Alpha, à vous. »"], ["Transmettre", "Message court. Dites l’essentiel d’abord."], ["Accuser réception", "Le correspondant confirme : « Reçu. » Sinon, il demande de répéter."], ["Clore", "« Terminé. » Chaque échange se termine par une clôture."]),
           h("Mots de procédure courants"),

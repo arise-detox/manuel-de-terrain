@@ -33,6 +33,7 @@
         id: "hypothermie", titre: "Hypothermie", resume: "Reconnaître le refroidissement du corps, agir tôt.",
         b: [
           p("L’**hypothermie** est une baisse de la température centrale du corps (au-dessous de **35 °C**). Elle survient en environnement froid, **mouillé** ou venteux — pas seulement en hiver. Elle est insidieuse : la personne atteinte perd d’abord le jugement et ne s’en rend pas compte."),
+          dia("cold-thermo", "Plus la température centrale baisse, plus les signes sont graves. Les frissons qui s’arrêtent sont un signal d’alarme."),
           table(["Stade", "Signes", "Conduite"], ["**Léger**", "Frissons intenses, mains maladroites, lenteur, parole confuse", "Abriter, retirer les vêtements mouillés, couvrir, boisson chaude sucrée si conscient, effort léger"], ["**Modéré**", "Frissons qui diminuent ou cessent, confusion, somnolence, démarche titubante", "Alerter (112), manipuler avec douceur, isoler du sol, couvrir complètement, ne pas faire marcher"], ["**Sévère**", "Inconscience, respiration lente, pouls difficile à trouver", "Alerter (112) tout de suite, manipuler très doucement, réanimation si arrêt, isolation maximale"]),
           h("Dans l’attente des secours"),
           steps(["Abriter", "Du vent, de la pluie, du sol froid."], ["Isoler du sol", "Tapis, sac, branchages."], ["Sécher", "Retirez les vêtements mouillés, **sans exposer** la personne au vent."], ["Envelopper", "Duvet, couvertures, couverture de survie. Couvrez la tête."], ["Réchauffer doucement", "Boisson chaude sucrée si elle est consciente et peut avaler. Pas d’alcool."]),
@@ -58,6 +59,7 @@
         id: "avalanche", titre: "Neige et avalanche", resume: "Lire le bulletin, s’équiper, savoir que faire : un module de sensibilisation.",
         b: [
           danger("**La neige et l’avalanche ne s’improvisent pas.** Ce chapitre est de la **sensibilisation**. Hors piste et en montagne enneigée, **suivez une formation** (clubs alpins, ENSA, guides de haute montagne) et **faites-vous accompagner** par un professionnel tant que vous n’avez pas acquis l’expérience.", "Se former"),
+          dia("cold-bera", "L’échelle européenne du risque d’avalanche, de 1 à 5."),
           h("Le bulletin d’estimation du risque d’avalanche (BERA)"),
           p("Météo-France publie, pour chaque massif, un bulletin qui évalue le risque sur une échelle de **1 à 5** :"),
           table(["Niveau", "Risque", "Lecture"], ["1", "Faible", "Manteau neigeux bien stabilisé"], ["2", "Limité", "Quelques pentes raides concernées"], ["3", "Marqué", "Plusieurs pentes concernées : le plus d’accidents surviennent à ce niveau"], ["4", "Fort", "Nombreuses pentes concernées, déclenchements spontanés"], ["5", "Très fort", "Avalanches spontanées nombreuses : se tenir à l’écart"]),

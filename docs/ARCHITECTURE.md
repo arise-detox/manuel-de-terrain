@@ -84,3 +84,10 @@ l’empreinte du commit pour purger l’ancien cache à chaque publication ; en 
 `scripts/build.mjs` écrit `_site/` : tous les scripts de `index.html` sont réunis dans `app.js`, les deux feuilles de style
 dans `css/style.css` (2 requêtes au lieu de 21), et `sw.js` reçoit une version de cache calculée sur le contenu.
 Le workflow `pages.yml` publie ce dossier. En développement, on travaille directement sur les fichiers sources.
+
+## Animations
+
+`js/fx.js` pose la classe `fx` sur `<html>` (sauf si `prefers-reduced-motion`), fait apparaître les schémas élément par élément
+quand ils entrent à l’écran, et allume tour à tour les éléments de classe `sq`. Dans un schéma, les classes `an-*` de
+`css/diagrams.css` ajoutent un mouvement : `an-flow` (tirets qui avancent), `an-pulse`, `an-bob`, `an-grow` (barres),
+`an-fill`, `an-beat`, `an-breathe`, `an-draw`, `an-slide`. Ne pas les poser sur un élément qui porte déjà un attribut `transform`.

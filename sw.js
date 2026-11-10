@@ -20,6 +20,7 @@ const PRECACHE = [
   "js/core.js",
   "js/diagrams-a.js",
   "js/diagrams-b.js",
+  "js/diagrams-c.js",
   "data/sources.js",
   "data/glossaire.js",
   "data/mod-navigation.js",
@@ -35,6 +36,7 @@ const PRECACHE = [
   "data/parcours.js",
   "js/tools.js",
   "js/plateau.js",
+  "js/fx.js",
   "js/app.js"
 ];
 

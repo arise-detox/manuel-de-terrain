@@ -55,6 +55,7 @@
         id: "ordre", titre: "L’ordre en cinq paragraphes", resume: "Situation, Mission, Exécution, Soutien, Commandement : un briefing structuré.",
         b: [
           p("Pour qu’un brief soit complet et facile à suivre, les armées utilisent un format fixe en cinq paragraphes (en français : **SMESC**). Il convient à tout groupe : sortie en montagne, chantier, bénévoles, événement."),
+          dia("lead-smesc", "Cinq paragraphes, toujours dans le même ordre : chacun sait où trouver l’information."),
           table(["Paragraphe", "Contenu", "Exemple (sortie)"], ["**1. Situation**", "Contexte : météo, terrain, autres acteurs, l’état de l’équipe", "Beau temps jusqu’à 15 h, orage possible ensuite, sentier balisé"], ["**2. Mission**", "Ce que l’on fait, qui, quand, où, pourquoi, en une phrase", "Aujourd’hui, nous montons au refuge pour 13 h afin de redescendre avant 16 h"], ["**3. Exécution**", "Intention, concept, tâches de chacun, consignes de coordination", "Équipe en file, Léa ouvre, Karim ferme, pause à 11 h, repli par le col si orage"], ["**4. Soutien**", "Vivres, eau, matériel, soins, évacuation", "Deux litres chacun, trousse dans le sac de Léa, voiture à 17 h"], ["**5. Commandement et transmissions**", "Qui commande, comment on se parle, signaux, plan PACE", "Marie dirige, canal 3 en PMR, appel toutes les 2 h, sifflet en urgence"]),
           p("Servez-vous de l’[outil Ordre en cinq paragraphes](#/outils/ordre) pour préparer votre propre briefing, puis imprimez ou envoyez-le à l’équipe."),
           h("Bien briefer"),
@@ -66,6 +67,7 @@
         id: "retex", titre: "Le retour d’expérience", resume: "Apprendre de chaque sortie : l’After Action Review en quatre questions.",
         b: [
           p("Ce qui distingue les équipes qui progressent : elles **tirent des leçons de chaque sortie**, bonne ou mauvaise. L’armée américaine pratique pour cela l’**After Action Review** (AAR), traduit en français « retour d’expérience » (RETEX)."),
+          dia("lead-retex", "Quatre questions, dans cet ordre. La dernière produit des décisions."),
           steps(["Qu’avait-on prévu ?", "Rappelez la mission et le plan."], ["Que s’est-il réellement passé ?", "Les faits, sans jugement : chronologie, observations de chacun."], ["Pourquoi cet écart ?", "Causes : matériel, décisions, météo, information, fatigue."], ["Que garde-t-on, que change-t-on ?", "Deux ou trois décisions concrètes pour la prochaine fois : un nouvel horaire, un matériel, une règle."]),
           note("Le RETEX n’est **pas un procès**. On cherche à comprendre ce qui s’est passé, pas à désigner un coupable. Chacun parle, y compris le plus jeune, et le chef parle en dernier.", "Esprit du RETEX"),
           tip("Notez en quelques lignes les leçons et rangez-les avec votre checklist de sortie. C’est le meilleur moyen de ne pas refaire la même erreur.", "Garder une trace"),

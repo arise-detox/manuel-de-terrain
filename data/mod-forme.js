@@ -22,6 +22,7 @@
         id: "entrainement", titre: "Entraîner : les principes", resume: "Progressivité, régularité, spécificité, récupération.",
         b: [
           p("Un entraînement efficace respecte quelques principes que l’on retrouve dans tous les manuels d’éducation physique."),
+          dia("fit-progression", "Une progression régulière, avec une semaine allégée pour laisser le corps s’adapter."),
           table(["Principe", "Idée", "En pratique"], ["**Progressivité**", "Augmenter la charge peu à peu", "Pas plus de 10 % d’augmentation par semaine en durée ou en charge"], ["**Régularité**", "La fréquence prime sur l’intensité", "Trois à quatre séances par semaine valent mieux qu’une séance héroïque"], ["**Spécificité**", "On progresse dans ce que l’on pratique", "Marcher beaucoup pour mieux marcher, porter pour mieux porter"], ["**Récupération**", "Le progrès se fait au repos", "Un jour léger ou de repos entre deux séances intenses"], ["**Variété**", "Éviter la routine et la surcharge d’un même point", "Alterner endurance, force, mobilité"]),
           h("Les repères d’activité de l’OMS"),
           p("L’Organisation mondiale de la santé recommande, pour un adulte, au moins **150 minutes par semaine** d’activité d’endurance d’intensité modérée (marche rapide), complétées par **deux séances de renforcement musculaire**. C’est un minimum de santé ; la préparation à une course de montagne ou à un trek exige davantage."),
@@ -72,6 +73,7 @@
         id: "mental", titre: "Mental, stress et récupération", resume: "Respirer, cadrer son attention, rebondir.",
         b: [
           p("Le pilier mental regroupe les compétences qui permettent de **rester lucide sous pression** : gérer le stress, se concentrer, se fixer des objectifs, récupérer."),
+          dia("fit-respiration", "Suivez le cercle : il grandit pendant l’inspiration, se resserre pendant l’expiration."),
           h("Respiration pour se calmer"),
           steps(["Inspirer", "Par le nez, pendant 4 secondes."], ["Marquer une pause", "Quelques secondes si c’est confortable."], ["Expirer lentement", "Par la bouche, pendant 6 secondes."], ["Répéter", "Pendant une à deux minutes. La respiration lente apaise le système nerveux."]),
           h("Autres outils"),

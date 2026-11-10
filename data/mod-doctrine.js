@@ -61,6 +61,7 @@
         id: "droit", titre: "Le droit des conflits armés", resume: "Humanité, nécessité, distinction, proportionnalité : les règles qui encadrent la guerre.",
         b: [
           p("Même au cœur d’un conflit, des règles s’appliquent. Le **droit international humanitaire** (droit des conflits armés), codifié notamment par les **Conventions de Genève de 1949** et leurs protocoles additionnels, est enseigné à tous les militaires, notamment à partir des principes suivants."),
+          dia("phi-droit", "Les quatre principes enseignés à tous les militaires."),
           table(["Principe", "Contenu"], ["**Nécessité militaire**", "On ne peut employer la force que pour atteindre un objectif militaire légitime."], ["**Distinction**", "On distingue en permanence combattants et civils, objectifs militaires et biens civils. Les civils ne sont pas une cible."], ["**Proportionnalité**", "Les dommages causés aux civils ne doivent pas être excessifs par rapport à l’avantage militaire attendu."], ["**Humanité**", "On interdit les souffrances inutiles. Les prisonniers, blessés et malades doivent être traités humainement."]),
           h("Ce qui est protégé"),
           ul("**Les blessés et malades** de toutes parties.", "**Les prisonniers de guerre**, qui ne peuvent être maltraités ni humiliés.", "**Le personnel sanitaire et religieux**, les hôpitaux, les ambulances (emblèmes de la croix rouge, du croissant rouge).", "**Les civils** et les biens civils (maisons, écoles, lieux de culte, biens culturels)."),

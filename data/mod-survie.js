@@ -40,6 +40,7 @@
         id: "eau", titre: "Eau", resume: "Trouver de l’eau, la rendre potable, reconnaître la déshydratation.",
         b: [
           p("Il faut de l’ordre de **2 à 3 litres d’eau par jour** au repos, nettement plus en cas de chaleur ou d’effort. Une eau claire n’est pas forcément potable : bactéries, parasites et virus ne se voient pas."),
+          dia("surv-eau", "De la source à la gourde : quatre étapes, dans cet ordre."),
           h("Où en trouver"),
           ul("Les **cours d’eau** vifs valent mieux que les mares ; plus on est près de la source, mieux c’est. Évitez les eaux en aval de pâturages, de villages ou de mines.", "La **pluie** recueillie avec une bâche, la **rosée** essuyée à l’aube avec un tissu.", "Le **creux d’un vallon** en végétation dense, où l’eau affleure parfois."),
           h("La rendre potable"),

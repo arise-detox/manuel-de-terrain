@@ -41,7 +41,7 @@
     var t = D.pol(cx, cy, r - 6, 60), tb = D.pol(cx, cy, r - 6, 240);
     b += A(cx, cy, f(t[0]), f(t[1]), "a", "d-th") + L(cx, cy, f(tb[0]), f(tb[1]), "d-dash d-l2");
     var a1 = D.pol(cx, cy, 78, 0), a2 = D.pol(cx, cy, 78, 60);
-    b += P("M" + f(a1[0]) + "," + f(a1[1]) + " A78,78 0 0 1 " + f(a2[0]) + "," + f(a2[1]), "d-dg d-th");
+    b += P("M" + f(a1[0]) + "," + f(a1[1]) + " A78,78 0 0 1 " + f(a2[0]) + "," + f(a2[1]), "d-dg d-th an-draw");
     b += T(cx + 20, cy - 36, "60°", "d-b d-td") + C(cx, cy, 5, "f-i");
     b += TL(f(tb[0]) - 10, f(tb[1]) + 22, ["240°", "(azimut inverse)"], 18, "d-e d-s d-g");
     var x = 440;
@@ -166,7 +166,7 @@
   X["surv-feu"] = function () {
     var b = "", i;
     function panel(x, titre, sous, inner) { return G(x, 4, R(0, 0, 190, 214, "f-p", 8) + inner + T(95, 188, titre, "d-m d-b") + T(95, 206, sous, "d-m d-sg d-g")); }
-    var tipi = L(40, 150, 95, 40) + L(150, 150, 95, 40) + L(95, 150, 95, 40) + L(72, 150, 95, 70, "d-l2") + C(95, 140, 9, "f-wa d-ct") + '<path d="M95,40 C86,28 100,24 96,12 C108,22 108,34 95,40Z" class="d-ln f-dg d-nos"/>';
+    var tipi = L(40, 150, 95, 40) + L(150, 150, 95, 40) + L(95, 150, 95, 40) + L(72, 150, 95, 70, "d-l2") + C(95, 140, 9, "f-wa d-ct") + '<path d="M95,40 C86,28 100,24 96,12 C108,22 108,34 95,40Z" class="d-ln f-dg d-nos an-flame"/>';
     var cab = "";
     for (i = 0; i < 4; i++) {
       if (i % 2 === 0) cab += C(52, 142 - i * 18, 8, "f-ct") + C(138, 142 - i * 18, 8, "f-ct");
@@ -183,7 +183,7 @@
     var items = [["V", ["Besoin", "d’assistance"], "M22,24 L50,96 L78,24"], ["X", ["Besoin d’aide", "médicale"], "M24,24 L76,96 M76,24 L24,96"], ["N", ["Non", "(négatif)"], "M26,96 L26,24 L74,96 L74,24"], ["Y", ["Oui", "(affirmatif)"], "M20,24 L50,62 L80,24 M50,62 L50,98"], ["→", ["Nous allons dans", "cette direction"], "M18,60 L84,60 M62,36 L84,60 L62,84"]], b = "";
     items.forEach(function (it, i) {
       var x = 6 + i * 118;
-      b += G(x, 6, R(0, 0, 108, 118, "f-p", 8) + P(it[2], "d-th d-dg") + TL(54, 142, it[1], 18, "d-m d-s"));
+      b += G(x, 6, R(0, 0, 108, 118, "f-p", 8) + P(it[2], "d-th d-dg an-draw") + TL(54, 142, it[1], 18, "d-m d-s"));
     });
     b += TL(6, 214, ["Signes de grande taille (3 m ou plus), contrastés avec le sol,", "visibles depuis le ciel.", "Appel de détresse universel : trois signaux répétés", "(sifflet, feux, éclats de miroir ou de lampe)."], 22, "d-sg");
     return D.svg(600, 300, b, "Code de signaux sol-air : V, X, N, Y et la flèche");

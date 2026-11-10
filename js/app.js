@@ -386,6 +386,7 @@
     document.title = (r.home ? "" : r.title + " — ") + "Manuel de terrain";
     renderNav(path); drawer(false);
     if (r.after) r.after();
+    if (MT.fx) MT.fx.scan(view);
     if (!(q.t && seg[0] === "glossaire")) window.scrollTo(0, 0);
     var h1 = $("h1", view); if (h1) h1.focus({ preventScroll: true });
   }

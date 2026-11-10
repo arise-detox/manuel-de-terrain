@@ -50,7 +50,7 @@
     b += '<path d="M0,250 L130,250 C190,250 215,112 300,112 C385,112 410,250 470,250 L600,250 L600,290 L0,290Z" class="d-ln f-v d-vg"/>';
     b += L(70, 250, 70, 190, "d-th") + L(530, 250, 530, 190, "d-th") + L(300, 112, 300, 70, "d-th");
     b += L(70, 190, 530, 190, "d-dg d-dash") + '<g class="d-ln d-dg d-th"><line x1="291" y1="181" x2="309" y2="199"/><line x1="309" y1="181" x2="291" y2="199"/></g>';
-    b += L(70, 190, 300, 70, "d-ac d-th") + L(300, 70, 530, 190, "d-ac d-th");
+    b += L(70, 190, 300, 70, "d-ac d-th an-flow") + L(300, 70, 530, 190, "d-ac d-th an-flow");
     b += T(70, 276, "Station A", "d-m d-b") + T(530, 276, "Station B", "d-m d-b") + T(300, 56, "Relais en point haut", "d-m d-b d-ta");
     b += T(300, 226, "Liaison directe coupée par le relief", "d-m d-s d-td");
     b += T(300, 22, "VHF / UHF : propagation en vue directe. Monter en hauteur ou relayer.", "d-m d-sg");
@@ -70,7 +70,7 @@
   /* ===== COMMANDEMENT ===== */
   X["lead-ooda"] = function () {
     var b = "";
-    function node(cx, cy, t, s) { return R(cx - 78, cy - 32, 156, 64, "f-p d-th", 10) + T(cx, cy - 2, t, "d-m d-b") + T(cx, cy + 20, s, "d-m d-s d-g"); }
+    function node(cx, cy, t, s) { return R(cx - 78, cy - 32, 156, 64, "f-p d-th sq", 10) + T(cx, cy - 2, t, "d-m d-b") + T(cx, cy + 20, s, "d-m d-s d-g"); }
     b += node(280, 44, "Observer", "recueillir les faits") + node(480, 176, "S’orienter", "comprendre, interpréter") + node(280, 308, "Décider", "choisir une option") + node(80, 176, "Agir", "exécuter, tester");
     b += A(352, 64, 428, 144, "a", "d-th") + A(432, 208, 352, 288, "a", "d-th") + A(208, 288, 128, 208, "a", "d-th") + A(128, 144, 208, 64, "a", "d-th");
     b += TL(280, 168, ["Raccourcir la boucle :", "agir sur une situation avant", "qu’elle n’ait changé."], 22, "d-m d-sg");
@@ -105,7 +105,7 @@
     var b = "";
     function panel(x, y, titre, sous, dots) {
       var inner = R(0, 0, 186, 176, "f-p", 8);
-      dots.forEach(function (d, i) { inner += C(d[0], d[1], 8, i === 0 ? "f-ac d-ac" : "f-pa"); });
+      dots.forEach(function (d, i) { inner += C(d[0], d[1], 8, (i === 0 ? "f-ac d-ac" : "f-pa") + " an-bob"); });
       inner += A(168, 50, 168, 22, "", "d-l2") + T(94, 150, titre, "d-m d-b") + T(94, 168, sous, "d-m d-s d-g");
       return G(x, y, inner);
     }
@@ -123,7 +123,7 @@
     [60, 180, 300].forEach(function (a) { var p = D.pol(cx, cy, r, a); b += L(cx, cy, f(p[0]), f(p[1]), "d-dash d-l2"); });
     [[0, "Secteur 1"], [120, "Secteur 2"], [240, "Secteur 3"]].forEach(function (s) {
       var p = D.pol(cx, cy, r, s[0]), o = D.pol(cx, cy, r + 38, s[0]), m = D.pol(cx, cy, r - 40, s[0]);
-      b += A(f(p[0]), f(p[1]), f(o[0]), f(o[1]), "d") + C(f(p[0]), f(p[1]), 9, "f-ac d-ac");
+      b += A(f(p[0]), f(p[1]), f(o[0]), f(o[1]), "d", "an-pulse") + C(f(p[0]), f(p[1]), 9, "f-ac d-ac");
       b += T(f(m[0]), f(m[1]), s[1], "d-m d-s");
     });
     b += C(cx, cy, 22, "f-wa d-ct") + T(cx, cy + 5, "repos", "d-m d-s");
@@ -138,13 +138,13 @@
     var b = "", i;
     b += T(145, 28, "Attrition", "d-m d-b") + T(145, 48, "user l’adversaire par des chocs frontaux", "d-m d-s d-g");
     b += R(40, 64, 210, 36, "f-pp", 6) + T(145, 88, "Adversaire", "d-m d-b") + R(40, 220, 210, 36, "f-a", 6) + T(145, 244, "Nous", "d-m d-b");
-    for (i = 0; i < 5; i++) b += A(62 + i * 42, 214, 62 + i * 42, 108, "d-", "d-l2");
+    for (i = 0; i < 5; i++) b += A(62 + i * 42, 214, 62 + i * 42, 108, "d-", "d-l2 an-flow");
     b += L(300, 18, 300, 270, "d-l2 d-dash d-fine");
     b += T(450, 28, "Manœuvre", "d-m d-b") + T(450, 48, "fixer, puis exploiter la brèche", "d-m d-s d-g");
     b += R(330, 64, 80, 36, "f-pp", 6) + R(490, 64, 80, 36, "f-pp", 6) + T(450, 88, "brèche", "d-m d-s d-td");
     b += R(330, 220, 240, 36, "f-a", 6) + T(450, 244, "Nous", "d-m d-b");
     b += A(366, 214, 366, 108, "d-", "d-l2 d-dash") + A(534, 214, 534, 108, "d-", "d-l2 d-dash") + T(354, 160, "fixer", "d-s d-e d-g") + T(546, 160, "fixer", "d-s d-g");
-    b += A(450, 214, 450, 116, "a", "d-th") + C(450, 124, 10, "f-d d-dg") + T(472, 128, "point faible", "d-s d-td");
+    b += A(450, 214, 450, 116, "a", "d-th an-flow") + C(450, 124, 10, "f-d d-dg") + T(472, 128, "point faible", "d-s d-td");
     return D.svg(600, 276, b, "Attrition (chocs frontaux) opposée à la manœuvre (fixer puis exploiter une brèche)");
   };
 
@@ -174,7 +174,7 @@
     defs.forEach(function (d, i) {
       var x = 74 + i * 150, y = 78;
       b += C(x, y, 62, "f-p") + C(x, y, 41, "d-l2") + C(x, y, 20, "d-l2");
-      d[2].forEach(function (p) { b += C(x + p[0], y + p[1], 4.5, "f-dg d-nos"); });
+      d[2].forEach(function (p) { b += C(x + p[0], y + p[1], 4.5, "f-dg d-nos an-pop"); });
       b += T(x, 172, d[0], "d-m d-b") + T(x, 192, d[1], "d-m d-s d-g");
     });
     return D.svg(600, 206, b, "Quatre groupements de tir : serré et centré, serré mais décalé, dispersé, dispersion verticale");
@@ -207,7 +207,7 @@
     b += R(70, 36, 80, 170, "f-a", 0) + R(150, 36, 120, 170, "f-wa", 0) + R(270, 36, 34, 170, "f-pp d-th", 0);
     b += T(50, 126, "Peau", "d-e d-b");
     [70, 112, 154].forEach(function (y) { b += A(82, y, 420, y, "a", "d-dash"); });
-    [91, 133, 175].forEach(function (y) { b += A(500, y, 312, y, "d", "d-th"); });
+    [91, 133, 175].forEach(function (y) { b += A(500, y, 312, y, "d", "d-th an-flow"); });
     b += T(330, 50, "sueur évacuée vers l’extérieur", "d-s d-ta") + T(392, 208, "vent et pluie arrêtés", "d-s d-td");
     b += C(110, 230, 13, "f-ac d-nos") + T(110, 236, "1", "d-m d-b d-on") + TL(130, 226, ["Couche de base :", "évacue la sueur"], 18, "d-s");
     b += C(240, 230, 13, "f-ac d-nos") + T(240, 236, "2", "d-m d-b d-on") + TL(260, 226, ["Isolation :", "piège l’air"], 18, "d-s");

@@ -12,6 +12,7 @@
         id: "securite", titre: "Sécurité avant tout", resume: "Les quatre règles universelles, le cadre légal en France, le stand.",
         b: [
           danger("Une arme à feu est **toujours dangereuse**. Ce module ne remplace ni un **moniteur diplômé**, ni les consignes d’un **club affilié à la Fédération française de tir (FFTir)**. N’apprenez jamais seul ; n’utilisez une arme que dans un **stand agréé**, sous la responsabilité d’un encadrant.", "Cadre indispensable"),
+          dia("tir-regles", "Quatre règles cumulatives : il faut en enfreindre plusieurs pour qu’un accident arrive."),
           h("Les quatre règles universelles"),
           steps(["Toute arme est chargée", "Traitez toujours une arme comme si elle l’était, même si vous « savez » qu’elle ne l’est pas."], ["Jamais vers quelqu’un", "Ne dirigez **jamais** le canon vers ce que vous ne voulez pas détruire. Gardez-le toujours orienté vers la zone de tir ou vers le haut."], ["Doigt hors de la détente", "Le doigt reste **le long du pontet** jusqu’à ce que vous soyez en position, la cible dans la visée, et prêt à tirer."], ["Sûr de la cible et de ce qu’il y a derrière", "Identifiez votre cible. Assurez-vous que la balle est arrêtée par le pare-balles."]),
           h("Dans un stand"),

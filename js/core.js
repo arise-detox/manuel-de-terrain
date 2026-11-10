@@ -63,7 +63,7 @@
     o = o || {}; var w = o.w || 600, h = o.h || 58, gap = o.gap || 10, chip = o.chip || 21, x0 = o.x0 || 0, body = "", y = 4;
     items.forEach(function (it, i) {
       var iw = o.funnel ? w - i * (o.funnel) : w, ix = x0 + (w - iw) / 2;
-      body += D.R(ix, y, iw - 2, h, it.f || "f-p", 8);
+      body += D.R(ix, y, iw - 2, h, (it.f || "f-p") + " sq", 8);
       body += D.C(ix + chip + 12, y + h / 2, chip, it.cf || "f-ac d-nos");
       body += D.T(ix + chip + 12, y + h / 2 + 7, it.k, "d-m d-b d-on");
       body += D.T(ix + chip * 2 + 30, y + (it.d ? h / 2 - 5 : h / 2 + 6), it.t, "d-b");

@@ -60,6 +60,7 @@
         id: "nuit", titre: "Se déplacer de nuit", resume: "Adaptation de l’œil, lumière rouge, vision décalée, prudence.",
         b: [
           p("La nuit, tout est plus difficile : repères, distances, équilibre, froid. Les manuels de patrouille décrivent plusieurs réflexes pour mieux voir et mieux se déplacer, que l’on peut appliquer en randonnée nocturne ou lors d’un retour tardif."),
+          dia("tac-nuit", "La vision de nuit se gagne lentement et se perd en un instant."),
           h("L’adaptation à l’obscurité"),
           p("L’œil humain met environ **30 minutes** à s’adapter pleinement à l’obscurité. Un éclair de lumière blanche annule ce travail. Le bon réflexe : **protéger sa vision nocturne**."),
           ul("**Utilisez une lampe à lumière rouge** (ou masquez la lumière blanche) : elle préserve l’adaptation, tout en permettant de lire une carte (voir le thème « Lumière rouge » de cette application).", "**Fermez un œil** avant d’allumer une lampe : il conservera sa vision nocturne.", "**Évitez de fixer** les sources de lumière (phares, écran de téléphone)."),

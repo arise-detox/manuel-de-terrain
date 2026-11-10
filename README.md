@@ -33,11 +33,14 @@ utilisable hors-ligne** (PWA).
 | **Condition physique** | Cinq piliers, entraînement, poids du corps, marche chargée, nutrition, sommeil, mental |
 | **Froid, neige et montagne** | COLD, trois couches, hypothermie, gelures, avalanche (sensibilisation), altitude, orages |
 
-En chiffres : **10 modules, 59 chapitres, 29 schémas SVG, 71 questions de quiz, 135 termes de glossaire,
+En chiffres : **10 modules, 59 chapitres, 41 schémas SVG animés, 71 questions de quiz, 135 termes de glossaire,
 11 outils interactifs, 6 parcours conseillés, 19 sources.**
 
 ### Fonctions
 
+- **Animations pédagogiques** : les schémas se construisent pas à pas à l’écran (bouton « Rejouer »), les suites d’étapes
+  s’allument tour à tour, certains schémas donnent un rythme à suivre (massage cardiaque, respiration). Tout se coupe
+  si l’appareil demande moins d’animations.
 - **Schémas SVG** dessinés par le code, qui suivent le thème (jour, nuit, **lampe rouge** pour préserver la vision nocturne).
 - **Quiz** par module et quiz général, avec explications et meilleurs scores ; **cartes mémoire** retournables (glossaire anglais → français, par module).
 - **Recherche plein texte** insensible aux accents (raccourci `/`).
