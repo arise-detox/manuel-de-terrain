@@ -272,3 +272,27 @@ mark{background:var(--warn-tint);color:inherit;padding:0 2px;border-radius:2px;b
   .fig,.call,.kp,.tw{break-inside:avoid}
   a{color:#000;text-decoration:none}
 }
+
+/* ---------- plateau tactique ---------- */
+.pl{max-width:60rem}
+.pl-note{font-size:.95rem;color:var(--ink-2);line-height:1.5;margin:0 0 6px}
+.pl-help{font-size:.95rem;color:var(--ink-2);margin:-8px 0 10px;min-height:1.4em}
+.pl-svg{display:block;width:100%;height:auto;border:1.5px solid var(--ink);border-radius:8px;background:var(--panel);touch-action:none;user-select:none;-webkit-user-select:none;cursor:crosshair}
+.pl-bg{fill:var(--panel)}
+.pl-g{stroke:var(--rule);stroke-width:1}
+.pl-wall{stroke:var(--ink);stroke-width:6;stroke-linecap:round}
+.pl-door{stroke:var(--contour);stroke-width:4;stroke-dasharray:3 7;stroke-linecap:round}
+.pl-arrow{stroke:var(--ink);stroke-width:2.6;stroke-dasharray:8 6;fill:none}
+.pl-mk{fill:var(--ink)}
+.pl-pre{stroke:var(--grid);stroke-width:3;stroke-dasharray:5 5}
+.pl-cone{stroke:none;opacity:.5}
+.pl-cb{fill:var(--grid-tint)}.pl-cr{fill:var(--danger-tint)}
+.pl-p{stroke:var(--panel);stroke-width:2}
+.pl-pb{fill:var(--grid)}.pl-pr{fill:var(--danger)}.pl-pn{fill:var(--ink-2)}
+.pl-dir{stroke:var(--ink);stroke-width:3;stroke-linecap:round}
+.pl-seen{fill:none;stroke:var(--warn);stroke-width:3;stroke-dasharray:4 4}
+.pl-t{font:700 14px var(--f-head);text-anchor:middle;fill:var(--on-grid);pointer-events:none}
+.pl-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:10px}
+.pl-bar b{font:700 1.1rem var(--f-head);min-width:6.5em;text-align:center}
+.pl-chk{display:inline-flex;align-items:center;gap:6px;font:600 1.02rem var(--f-head);margin-right:6px}
+@media print{.pl .filters,.pl-bar,.pl-help{display:none}}

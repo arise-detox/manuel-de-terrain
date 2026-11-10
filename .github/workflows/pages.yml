@@ -33,12 +33,11 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - name: Préparer le site (seulement les fichiers servis)
-        run: |
-          mkdir _site
-          cp -r index.html manifest.webmanifest sw.js .nojekyll css js data assets _site/
-          # Nouveau numéro de version du cache hors-ligne à chaque publication
-          sed -i "s/mdt-v1/mdt-${GITHUB_SHA::7}/" _site/sw.js
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Construire le site (un seul script, une seule feuille de style, cache versionné)
+        run: node scripts/build.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

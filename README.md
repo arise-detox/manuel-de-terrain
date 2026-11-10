@@ -34,7 +34,7 @@ utilisable hors-ligne** (PWA).
 | **Froid, neige et montagne** | COLD, trois couches, hypothermie, gelures, avalanche (sensibilisation), altitude, orages |
 
 En chiffres : **10 modules, 59 chapitres, 29 schémas SVG, 71 questions de quiz, 135 termes de glossaire,
-10 outils interactifs, 6 parcours conseillés, 19 sources.**
+11 outils interactifs, 6 parcours conseillés, 19 sources.**
 
 ### Fonctions
 
@@ -43,6 +43,8 @@ En chiffres : **10 modules, 59 chapitres, 29 schémas SVG, 71 questions de quiz,
 - **Recherche plein texte** insensible aux accents (raccourci `/`).
 - **Outils** : azimuts et nords, estime du pas et règle de Naismith, échelle et pente, lever/coucher du soleil,
   alphabet phonétique, DTG, ordre en cinq paragraphes, message d’alerte, chronomètre de pose de garrot, check-lists.
+- **Plateau tactique** : plan sur grille (murs, portes), pions bleus, rouges et neutres, flèches, étapes animées,
+  champs de vision arrêtés par les murs, export et import. Pour l’airsoft, le paintball, les jeux et les exercices.
 - **Fiches imprimables** (feuilles de style d’impression).
 - **Hors-ligne** : service worker avec pré-cache complet, installable sur téléphone.
 - **Accessible** : navigation au clavier, lien d’évitement, contrastes, `prefers-reduced-motion`.
@@ -78,6 +80,7 @@ Ouvrir `index.html` directement dans un navigateur fonctionne aussi (le mode hor
 ### Vérifications
 
 ```bash
+npm run build   # construit _site/ : un seul script et une seule feuille de style (ce que publie GitHub Pages)
 npm test        # valide le contenu (modules, schémas, quiz, liens, glossaire, sources, pré-cache) et la syntaxe JS
 ```
 
@@ -102,7 +105,7 @@ index.html            coquille de l’application
 css/                  style.css (mise en page, thèmes, impression), diagrams.css (schémas)
 js/core.js            registre MT, constructeurs de blocs, boîte à outils SVG
 js/diagrams-*.js      les 29 schémas
-js/tools.js           les 10 outils interactifs
+js/tools.js           les 11 outils interactifs
 js/app.js             routeur, vues, recherche, quiz, cartes mémoire
 data/                 contenu : un fichier par module, glossaire, sources, parcours
 scripts/              validation du contenu et de la syntaxe

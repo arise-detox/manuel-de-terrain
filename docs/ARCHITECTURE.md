@@ -78,3 +78,9 @@ La page « À propos » permet de tout réinitialiser. Aucune donnée ne quitte 
 `sw.js` pré-cache tous les fichiers listés dans `PRECACHE`. Les pages sont servies réseau d’abord (cache en secours),
 les autres fichiers cache d’abord avec mise à jour en arrière-plan. Le workflow `pages.yml` remplace `mdt-v1` par
 l’empreinte du commit pour purger l’ancien cache à chaque publication ; en local, changez `VERSION` à la main.
+
+## Version publiée
+
+`scripts/build.mjs` écrit `_site/` : tous les scripts de `index.html` sont réunis dans `app.js`, les deux feuilles de style
+dans `css/style.css` (2 requêtes au lieu de 21), et `sw.js` reçoit une version de cache calculée sur le contenu.
+Le workflow `pages.yml` publie ce dossier. En développement, on travaille directement sur les fichiers sources.

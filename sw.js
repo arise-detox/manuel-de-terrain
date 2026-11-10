@@ -34,6 +34,7 @@ const PRECACHE = [
   "data/mod-froid.js",
   "data/parcours.js",
   "js/tools.js",
+  "js/plateau.js",
   "js/app.js"
 ];
 
